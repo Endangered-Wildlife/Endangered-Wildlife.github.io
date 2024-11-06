@@ -1,4 +1,52 @@
 site_name: Endangered Wild Life
 site_url: https://Endangered-Wildlife.github.io/Endangered-Wildlife.github.io
+repo_url: https://github.com/Endangered-Wildlife/biodiversity
+repo_name: Endangered-Wildlife/biodiversity
+
 theme:
   name: material
+  features:
+    - content.code.annotate
+    - content.code.select
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+  font:
+    text: Roboto
+    code: Roboto Mono
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+      primary: deep orange
+      accent: yellow
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+      primary: deep orange
+      accent: yellow
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+extra:
+  annotate:
+    json: [ .s2 ]
+
+copyright: >
+  Copyright &copy; 2023 - 2024 Endangered Wild Life
+#  <a href="#__consent">Change cookie settings</a>

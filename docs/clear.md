@@ -1,5 +1,11 @@
 Writing clear Python code requires several key considerations that make your code readable, maintainable, and efficient:
 
+!!! note
+    This is a note!
+
+!!! warning
+    This is a warning!
+
 1. **Follow PEP 8 Guidelines**:
    - PEP 8 is the official style guide for Python. It covers everything from indentation to naming conventions, ensuring consistent code structure. For example:
      - Use 4 spaces per indentation level.

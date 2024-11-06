@@ -1,1 +1,3 @@
-mkdocs-materialgit remote add origin
+markdown
+mkdocs-material
+pymdown-extensions
