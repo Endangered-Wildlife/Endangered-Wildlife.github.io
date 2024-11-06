@@ -1,0 +1,1 @@
+mkdocs-materialgit remote add origin
