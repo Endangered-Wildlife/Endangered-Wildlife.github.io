@@ -47,6 +47,9 @@ extra:
   annotate:
     json: [ .s2 ]
 
+extra_javascript:
+  - assets/password-protect.js  # Adjust the path if needed
+
 copyright: >
   Copyright &copy; 2023 - 2024 Endangered Wild Life
 #  <a href="#__consent">Change cookie settings</a>
