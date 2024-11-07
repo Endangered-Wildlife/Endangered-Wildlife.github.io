@@ -5,6 +5,7 @@ repo_name: Endangered-Wildlife/biodiversity
 
 theme:
   name: material
+
   features:
     - content.code.annotate
     - content.code.select
@@ -42,8 +43,10 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
-
+plugins:
+  - drawio_file
 extra:
+  version: "v1.0"  # Set this to your current version
   annotate:
     json: [ .s2 ]
 
@@ -54,5 +57,5 @@ extra_css:
   - assets/style.css
 
 copyright: >
-  Copyright &copy; 2023 - 2024 Endangered Wild Life
+  Copyright &copy; 2023 - 2024 Endangered Wild Life - Version 1.0
 #  <a href="#__consent">Change cookie settings</a>
