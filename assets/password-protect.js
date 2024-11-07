@@ -4,7 +4,7 @@ if (!localStorage.getItem('authenticated')) {
     if (password === "bio") {
         // Store the state in localStorage if password is correct
         localStorage.setItem('authenticated', 'true');
-    document.body.style.display = "block";  // Show content
+        document.body.style.display = "block";  // Show content
     } else {
         document.body.innerHTML = "<h1>Access Denied</h1>";
     }
