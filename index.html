@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-mkdocs" class="md-skip">
+        <a href="#biodiversity-project" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Welcome to MkDocs
+              Biodiversity Project
             
           </span>
         </div>
@@ -266,7 +266,7 @@
           
   
   <span class="md-ellipsis">
-    Welcome to MkDocs
+    Biodiversity Project
   </span>
   
 
@@ -277,7 +277,7 @@
         
   
   <span class="md-ellipsis">
-    Welcome to MkDocs
+    Biodiversity Project
   </span>
   
 
@@ -299,18 +299,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
+  <a href="#specifications" class="md-nav__link">
     <span class="md-ellipsis">
-      Commands
+      Specifications
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
+  <a href="#biodiversity-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Project layout
+      Biodiversity Overview
     </span>
   </a>
   
@@ -411,18 +411,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
+  <a href="#specifications" class="md-nav__link">
     <span class="md-ellipsis">
-      Commands
+      Specifications
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
+  <a href="#biodiversity-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Project layout
+      Biodiversity Overview
     </span>
   </a>
   
@@ -446,21 +446,35 @@
   
 
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
+<h1 id="biodiversity-project">Biodiversity Project</h1>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
+<li>Version 1.0.0
+The Biodiversity Database is revolutionising biodiversity for business by bringing transparency and knowledge to the
+industry. It is breaking boundaries in terms of biodiversity information availability – delivering access to regional
+species level data.</li>
 </ul>
-<h2 id="project-layout">Project layout</h2>
-<div class="language-text highlight"><pre><span></span><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre></div>
+<h2 id="specifications">Specifications</h2>
+<h2 id="biodiversity-overview">Biodiversity Overview</h2>
+<p>Biodiversity is a comprehensive platform built within the Google Cloud Platform ecosystem,
+designed to streamline data management and access for users.
+At its core is a robust <strong>PostgreSQL</strong> database, hosted on <strong>Google Cloud SQL</strong>, responsible
+for securely storing all relevant data accessible through both the <strong>Admin Panel</strong> and <strong>Biodiversity API</strong>.</p>
+<p>The <strong>Admin Panel</strong>, developed using Python <strong>Flask</strong> and hosted on <strong>Google Cloud Run</strong>, serves as the central hub for
+database interactions,
+offering different levels of user access for efficient data management. Simultaneously, the <strong>Biodiversity API</strong>,
+also powered by Python <strong>Flask</strong> and hosted on <strong>Google Cloud Run</strong>, acts as the bridge between the <strong>PostgreSQL</strong>
+database and external clients,
+ensuring secure data retrieval and transmission with the use of valid <strong>JWT tokens</strong>.</p>
+<p>To enhance data processing capabilities, <strong>Apache Airflow</strong>, deployed on <strong>Google Compute Engine</strong>,
+plays a pivotal role in fetching data from third-party APIs and seamlessly integrating it into the <strong>PostgreSQL</strong>
+database,
+enriching the platform's data repository.</p>
+<p>Furthermore, the <strong>Client Website</strong>, crafted using <strong>Node.js</strong> and hosted on <strong>Google Cloud Run</strong>,
+serves as the primary frontend interface for users to interact with <strong>Biodiversity</strong>.
+Through this website, users can log in, subscribe to services, and search for information,
+with the ability to retrieve <strong>JWT tokens</strong> using their credentials and seamlessly access the <strong>Biodiversity API</strong> for
+data retrieval.</p>
+<p>These components empowering users with seamless data access and management capabilities through Biodiversity.</p>
 
 
 
