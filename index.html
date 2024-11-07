@@ -448,28 +448,28 @@
 
 <h1 id="biodiversity-project">Biodiversity Project</h1>
 <ul>
-<li>Version 1.0.0
-The Biodiversity Database is revolutionising biodiversity for business by bringing transparency and knowledge to the
-industry. It is breaking boundaries in terms of biodiversity information availability – delivering access to regional
-species level data.</li>
+<li>Version 1.0.1</li>
 </ul>
+<p>The Biodiversity Database is revolutionising biodiversity for business by bringing transparency and knowledge to the
+industry. It is breaking boundaries in terms of biodiversity information availability – delivering access to regional
+species level data.</p>
 <h2 id="specifications">Specifications</h2>
 <h2 id="biodiversity-overview">Biodiversity Overview</h2>
 <p>Biodiversity is a comprehensive platform built within the Google Cloud Platform ecosystem,
 designed to streamline data management and access for users.
-At its core is a robust <strong>PostgreSQL</strong> database, hosted on <strong>Google Cloud SQL</strong>, responsible
+At its core is a robust <strong>PostgreSQL</strong> database, hosted on <strong>Azure Postgresql</strong>, responsible
 for securely storing all relevant data accessible through both the <strong>Admin Panel</strong> and <strong>Biodiversity API</strong>.</p>
-<p>The <strong>Admin Panel</strong>, developed using Python <strong>Flask</strong> and hosted on <strong>Google Cloud Run</strong>, serves as the central hub for
+<p>The <strong>Admin Panel</strong>, developed using Python <strong>Flask</strong> and hosted on <strong>Azure Kubernetes</strong>, serves as the central hub for
 database interactions,
 offering different levels of user access for efficient data management. Simultaneously, the <strong>Biodiversity API</strong>,
-also powered by Python <strong>Flask</strong> and hosted on <strong>Google Cloud Run</strong>, acts as the bridge between the <strong>PostgreSQL</strong>
+also powered by Python <strong>Flask</strong> and hosted on <strong>Azure Kubernetes</strong>, acts as the bridge between the <strong>PostgreSQL</strong>
 database and external clients,
 ensuring secure data retrieval and transmission with the use of valid <strong>JWT tokens</strong>.</p>
-<p>To enhance data processing capabilities, <strong>Apache Airflow</strong>, deployed on <strong>Google Compute Engine</strong>,
+<p>To enhance data processing capabilities, <strong>Apache Airflow</strong>, deployed on <strong>Azure Kubernetes</strong>,
 plays a pivotal role in fetching data from third-party APIs and seamlessly integrating it into the <strong>PostgreSQL</strong>
 database,
 enriching the platform's data repository.</p>
-<p>Furthermore, the <strong>Client Website</strong>, crafted using <strong>Node.js</strong> and hosted on <strong>Google Cloud Run</strong>,
+<p>Furthermore, the <strong>Client Website</strong>, crafted using <strong>Node.js</strong> and hosted on <strong>Azure Kubernetes</strong>,
 serves as the primary frontend interface for users to interact with <strong>Biodiversity</strong>.
 Through this website, users can log in, subscribe to services, and search for information,
 with the ability to retrieve <strong>JWT tokens</strong> using their credentials and seamlessly access the <strong>Biodiversity API</strong> for
