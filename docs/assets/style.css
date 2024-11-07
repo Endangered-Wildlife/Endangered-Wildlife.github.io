@@ -1,0 +1,4 @@
+/* Hide all content initially */
+body {
+    display: none;
+}
